@@ -1,0 +1,15 @@
+<h1>Informações de <strong><%= @aluno.nome %></strong></h1>
+
+<p><%= @aluno.data_nasc%></p>
+
+<p><%= @aluno.data_inicio%></p>
+
+<p><%= @aluno.ano_letivo%></p>
+
+<% if @temperamentos.any?%>
+	<% @temperamentos.each do |t| %>
+		<p><%= t%></p>
+	<% end %>
+<% else %>
+	<p>Sem resultados!</p>
+<% end %>
