@@ -11,21 +11,19 @@ class AlunosController < ApplicationController
 		return @aluno, @temperamentos
 	end
 
-	# def aluno_details
+	def new_aluno
+		@aluno = Aluno.new
+		@temperamentos = TemperamentoAluno.all
 
-	# 	sql = "SELECT temperamento_alunos.temperamento
-	# 			FROM alunos
-	# 				join comportamentos
-	# 					on alunos.id = comportamentos.aluno_id
-	# 				join temperamento_alunos
-	# 					on temperamento_alunos.id = comportamentos.temperamento_aluno_id
-	# 			where alunos.id = #{params[:id]}"
-	# 	records_array = ActiveRecord::Base.connection.execute(sql)
-		
-	# 	@temperamentos = records_array
+		return @aluno, @temperamentos
+	end
 
-	# 	@aluno = Aluno.find(params[:id])
+	def create
+		@aluno = Aluno.new(aluno_params)
+		@aluno.save()
+	end
 
-	# 	return @aluno, @temperamentos
-	# end
+	def aluno_params
+		params.require(:aluno).permit(:nome, :data_nasc, :cidade_nasc, :ano_letivo, :data_inicio, :outro_temp)
+	end
 end

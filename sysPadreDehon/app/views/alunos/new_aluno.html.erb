@@ -1,1 +1,36 @@
-class 
+<%= form_for(@aluno) do |f| %>
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :data_nasc %><br>
+    <%= f.text_field :data_nasc %>
+  </div>
+  <div class="field">
+    <%= f.label :cidade_nasc %><br>
+    <%= f.text_field :cidade_nasc %>
+  </div>
+  <div class="field">
+    <%= f.label :ano_letivo %><br>
+    <%= f.number_field :ano_letivo %>
+  </div>
+  <div class="field">
+    <%= f.label :data_inicio %><br>
+    <%= f.text_field :data_inicio %>
+  </div>
+
+  <div class="field">
+    <%= f.label :temperamento %><br>
+    <%= f.collection_select :id, TemperamentoAluno.all, :id, :temperamento %>
+  </div>
+
+
+   <div class="field">
+    <%= f.label :outro_temp %><br>
+    <%= f.text_field :outro_temp %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

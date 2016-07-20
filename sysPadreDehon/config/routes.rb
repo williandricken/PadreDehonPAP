@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   get 'temperamentos/' => 'temperamentos#show_and_add'
   get 'alunos/' => 'alunos#list'
-  get 'alunos/:id' => 'alunos#aluno_details'
+  #get 'alunos/:id' => 'alunos#aluno_details'
+  get 'alunos/new' => 'alunos#new_aluno'
+  #get "/alunos/new" => "alunos#create", :via => :post, :as => :create
+  resources :alunos
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
