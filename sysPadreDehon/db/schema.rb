@@ -11,13 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160726212522) do
+ActiveRecord::Schema.define(version: 20160727164554) do
 
   create_table "behaviors", force: :cascade do |t|
     t.string   "description", limit: 255
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
   end
+
+  create_table "student_behaviors", force: :cascade do |t|
+    t.integer  "student_id",  limit: 4
+    t.integer  "behavior_id", limit: 4
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+  end
+
+  add_index "student_behaviors", ["behavior_id"], name: "index_student_behaviors_on_behavior_id", using: :btree
+  add_index "student_behaviors", ["student_id"], name: "index_student_behaviors_on_student_id", using: :btree
 
   create_table "students", force: :cascade do |t|
     t.string   "name",             limit: 255
