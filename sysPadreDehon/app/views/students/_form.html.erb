@@ -32,6 +32,13 @@
     <%= f.text_field :start_date %>
   </div>
   <div class="field">
+    <%= f.label "Comportamentos:" %><br>
+    <% Behavior.all.each do |b| %>
+      <%= f.check_box :behavior_ids, {multiple: true}, b.id, nil%>
+      <%= f.label b.description%>
+    <% end %>
+  </div>
+  <div class="field">
     <%= f.label "Outro comportamento:" %><br>
     <%= f.text_field :another_behavior %>
   </div>

@@ -26,9 +26,19 @@
 </p>
 
 <p>
+  <strong>Comportamentos:</strong>
+  <% @student.behaviors.each do |sb|%>
+  <%= sb.description %>
+  <%= sb.description === @student.behaviors.last.description ? "." : " ," %>
+  <% end %>
+</p>
+
+<% if @student.another_behavior.present? %>
+<p>
   <strong>Outro comportamento:</strong>
   <%= @student.another_behavior %>
 </p>
+<% end %>
 
 <%= link_to 'Editar', edit_student_path(@student) %> |
 <%= link_to 'Voltar', students_path %>
