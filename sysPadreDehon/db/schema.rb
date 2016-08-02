@@ -11,12 +11,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160730183521) do
+ActiveRecord::Schema.define(version: 20160802235511) do
 
   create_table "behaviors", force: :cascade do |t|
     t.string   "description", limit: 255
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
+  end
+
+  create_table "disease_medic_infos", force: :cascade do |t|
+    t.integer  "disease_id",    limit: 4
+    t.integer  "medic_info_id", limit: 4
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
+  add_index "disease_medic_infos", ["disease_id"], name: "index_disease_medic_infos_on_disease_id", using: :btree
+  add_index "disease_medic_infos", ["medic_info_id"], name: "index_disease_medic_infos_on_medic_info_id", using: :btree
+
+  create_table "diseases", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "medic_infos", force: :cascade do |t|
+    t.string   "surgery",    limit: 255, default: "Não"
+    t.string   "treatment",  limit: 255, default: "Não"
+    t.string   "allergic",   limit: 255, default: "Não"
+    t.string   "intolerant", limit: 255, default: "Não"
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
   end
 
   create_table "responsibles", force: :cascade do |t|
@@ -37,6 +62,16 @@ ActiveRecord::Schema.define(version: 20160730183521) do
 
   add_index "student_behaviors", ["behavior_id"], name: "index_student_behaviors_on_behavior_id", using: :btree
   add_index "student_behaviors", ["student_id"], name: "index_student_behaviors_on_student_id", using: :btree
+
+  create_table "student_responsibles", force: :cascade do |t|
+    t.integer  "student_id",     limit: 4
+    t.integer  "responsible_id", limit: 4
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
+  add_index "student_responsibles", ["responsible_id"], name: "index_student_responsibles_on_responsible_id", using: :btree
+  add_index "student_responsibles", ["student_id"], name: "index_student_responsibles_on_student_id", using: :btree
 
   create_table "students", force: :cascade do |t|
     t.string   "name",             limit: 255

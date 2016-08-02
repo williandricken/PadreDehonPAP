@@ -40,5 +40,15 @@
 </p>
 <% end %>
 
+<p>
+  <strong>Responsáveis:</strong> <br>
+  <% @student.responsibles.each do |r|%>
+  <p><strong>Nome: </strong><%= r.name %></p>  
+  <p><strong>RG: </strong><%= r.rg %></p>  
+  <p><strong>CPF: </strong><%= r.cpf %></p>  
+  <%= link_to 'Mais informações deste responsável', r %>
+  <% end %>
+</p>
+
 <%= link_to 'Editar', edit_student_path(@student) %> |
 <%= link_to 'Voltar', students_path %>

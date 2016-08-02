@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :diseases
   resources :responsibles
   resources :behaviors
   resources :students
