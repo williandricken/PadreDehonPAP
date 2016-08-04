@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160803195329) do
+ActiveRecord::Schema.define(version: 20160804183046) do
 
   create_table "behaviors", force: :cascade do |t|
     t.string   "description", limit: 255
@@ -42,7 +42,10 @@ ActiveRecord::Schema.define(version: 20160803195329) do
     t.string   "intolerant", limit: 255, default: "Não"
     t.datetime "created_at",                             null: false
     t.datetime "updated_at",                             null: false
+    t.integer  "student_id", limit: 4
   end
+
+  add_index "medic_infos", ["student_id"], name: "index_medic_infos_on_student_id", using: :btree
 
   create_table "responsibles", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -82,10 +85,7 @@ ActiveRecord::Schema.define(version: 20160803195329) do
     t.string   "another_behavior", limit: 255
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
-    t.integer  "medic_info_id",    limit: 4
   end
 
-  add_index "students", ["medic_info_id"], name: "index_students_on_medic_info_id", using: :btree
-
-  add_foreign_key "students", "medic_infos"
+  add_foreign_key "medic_infos", "students"
 end

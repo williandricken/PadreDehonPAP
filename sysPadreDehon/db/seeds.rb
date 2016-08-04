@@ -47,8 +47,8 @@ mdi1 = MedicInfo.create(surgery: "No pé", treatment: "Para gastrite", allergic:
 mdi2 = MedicInfo.create(surgery: "No braço", treatment: "Para ADHD", intolerant: "Lactose")
 mdi3 = MedicInfo.create(treatment: "Psiquiatrico")
 
-mdi1<<Disease.find(3)
-mdi1<<Disease.find(5)
-mdi2<<Disease.find(3)
-mdi3<<Disease.find(1)
-mdi3<<Disease.find(6)
+mdi1.diseases<<Disease.find(3)
+mdi1.diseases<<Disease.find(5)
+mdi2.diseases<<Disease.find(3)
+mdi3.diseases<<Disease.find(1)
+mdi3.diseases<<Disease.find(6)
