@@ -1,0 +1,2952 @@
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 14:40:29 -0300
+
+ActiveRecord::NoDatabaseError (Unknown database 'sysPadreDehonDB'):
+  activerecord (4.2.6) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.6) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.6) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.6) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.6) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.1ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.7ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.3ms)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE `alunos` (`id` int(11) auto_increment PRIMARY KEY, `nome` varchar(255), `data_nasc` varchar(255), `cidade_nasc` varchar(255), `ano_letivo` int(11), `data_inicio` varchar(255), `outro_temp` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (2.7ms)[0m  CREATE TABLE `comportamentos` (`id` int(11) auto_increment PRIMARY KEY, `aluno_id` int(11), `temperamento_aluno_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (2.3ms)[0m  [1mCREATE  INDEX `index_comportamentos_on_aluno_id` USING btree ON `comportamentos` (`aluno_id`) [0m
+  [1m[35m (3.7ms)[0m  CREATE  INDEX `index_comportamentos_on_temperamento_aluno_id` USING btree ON `comportamentos` (`temperamento_aluno_id`) 
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE `temperamento_alunos` (`id` int(11) auto_increment PRIMARY KEY, `temperamento` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (3.2ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (4.8ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) [0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160717150237')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160717133918')
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160717122832')[0m
+  [1m[35m (6.0ms)[0m  CREATE TABLE `alunos` (`id` int(11) auto_increment PRIMARY KEY, `nome` varchar(255), `data_nasc` varchar(255), `cidade_nasc` varchar(255), `ano_letivo` int(11), `data_inicio` varchar(255), `outro_temp` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (4.6ms)[0m  [1mCREATE TABLE `comportamentos` (`id` int(11) auto_increment PRIMARY KEY, `aluno_id` int(11), `temperamento_aluno_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (3.5ms)[0m  CREATE  INDEX `index_comportamentos_on_aluno_id` USING btree ON `comportamentos` (`aluno_id`) 
+  [1m[36m (3.4ms)[0m  [1mCREATE  INDEX `index_comportamentos_on_temperamento_aluno_id` USING btree ON `comportamentos` (`temperamento_aluno_id`) [0m
+  [1m[35m (4.4ms)[0m  CREATE TABLE `temperamento_alunos` (`id` int(11) auto_increment PRIMARY KEY, `temperamento` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (2.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (5.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160717150237')
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160717133918')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160717122832')
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'alunos'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `alunos`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'comportamentos'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `comportamentos`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'temperamento_alunos'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `temperamento_alunos`
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-20 15:05:20 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (1.1ms)
+Completed 200 OK in 15ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alunos" for 127.0.0.1 at 2016-07-20 15:05:27 -0300
+Processing by AlunosController#list as HTML
+  [1m[35mAluno Load (0.3ms)[0m  SELECT `alunos`.* FROM `alunos`
+  Rendered alunos/list.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 304ms (Views: 289.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-20 15:05:27 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-20 15:05:27 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-20 15:05:27 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-20 15:05:27 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-20 15:05:27 -0300
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `alunos` (`nome`, `created_at`, `updated_at`) VALUES ('Willian', '2016-07-20 18:07:14', '2016-07-20 18:07:14')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mAluno Load (0.3ms)[0m  SELECT  `alunos`.* FROM `alunos`  ORDER BY `alunos`.`id` DESC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM `alunos` WHERE `alunos`.`id` = 1
+  [1m[36m (7.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `alunos` (`nome`, `data_nasc`, `cidade_nasc`, `ano_letivo`, `data_inicio`, `created_at`, `updated_at`) VALUES ('Willian', '12/03/2011', 'Curitiba', 2016, '01/01/2016', '2016-07-20 18:31:09', '2016-07-20 18:31:09')[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+
+
+Started GET "/alunos" for 127.0.0.1 at 2016-07-20 15:31:14 -0300
+Processing by AlunosController#list as HTML
+  [1m[36mAluno Load (0.2ms)[0m  [1mSELECT `alunos`.* FROM `alunos`[0m
+  Rendered alunos/list.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-20 15:31:14 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-20 15:31:14 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-20 15:31:14 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-20 15:31:14 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-20 15:31:14 -0300
+
+
+Started GET "/alunos" for 127.0.0.1 at 2016-07-20 15:31:16 -0300
+Processing by AlunosController#list as HTML
+  [1m[35mAluno Load (0.2ms)[0m  SELECT `alunos`.* FROM `alunos`
+  Rendered alunos/list.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-20 15:31:16 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-20 15:31:16 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-20 15:31:16 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-20 15:31:16 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-20 15:31:16 -0300
+
+
+Started GET "/alunos" for 127.0.0.1 at 2016-07-20 15:31:18 -0300
+Processing by AlunosController#list as HTML
+  [1m[36mAluno Load (0.2ms)[0m  [1mSELECT `alunos`.* FROM `alunos`[0m
+  Rendered alunos/list.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-20 15:31:18 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-20 15:31:18 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-20 15:31:18 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-20 15:31:18 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-20 15:31:18 -0300
+
+
+Started GET "/alunos/new" for 127.0.0.1 at 2016-07-20 15:33:08 -0300
+Processing by AlunosController#new_aluno as HTML
+  [1m[35mTemperamentoAluno Load (0.2ms)[0m  SELECT `temperamento_alunos`.* FROM `temperamento_alunos`
+  Rendered alunos/new_aluno.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 38ms (Views: 33.5ms | ActiveRecord: 1.6ms)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `temperamento_alunos` (`temperamento`, `created_at`, `updated_at`) VALUES ('Timido', '2016-07-20 18:34:54', '2016-07-20 18:34:54')
+  [1m[36m (3.5ms)[0m  [1mCOMMIT[0m
+
+
+Started POST "/alunos" for 127.0.0.1 at 2016-07-20 15:34:57 -0300
+Processing by AlunosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EmUfOxY/FiDVBG+QbLhzzX8b4w2PgKlHJmqH36ts++yP9yIALZUOh/4Twu0McZ6xKbG5CCbtRFxw6Okg3Ln22Q==", "aluno"=>{"nome"=>"Frank", "data_nasc"=>"10/05/2012", "cidade_nasc"=>"Londrina", "ano_letivo"=>"2016", "data_inicio"=>"01/05/2016", "outro_temp"=>""}, "commit"=>"Create Aluno"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `alunos` (`nome`, `data_nasc`, `cidade_nasc`, `ano_letivo`, `data_inicio`, `outro_temp`, `created_at`, `updated_at`) VALUES ('Frank', '10/05/2012', 'Londrina', 2016, '01/05/2016', '', '2016-07-20 18:34:57', '2016-07-20 18:34:57')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.8ms)
+
+ActionView::MissingTemplate (Missing template alunos/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/willian/Documentos/Willian/PadreDehonPAP/sysPadreDehon/app/views"
+):
+  actionview (4.2.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.6) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (18.5ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.8ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (29.5ms)
+
+
+Started GET "/alunos/new" for 127.0.0.1 at 2016-07-20 15:35:00 -0300
+Processing by AlunosController#new_aluno as HTML
+  [1m[35mTemperamentoAluno Load (0.3ms)[0m  SELECT `temperamento_alunos`.* FROM `temperamento_alunos`
+  Rendered alunos/new_aluno.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-20 15:35:00 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-20 15:35:00 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-20 15:35:00 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-20 15:35:00 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-20 15:35:00 -0300
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `temperamento_alunos` (`temperamento`, `created_at`, `updated_at`) VALUES ('Raivoso', '2016-07-20 18:35:51', '2016-07-20 18:35:51')[0m
+  [1m[35m (8.0ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `temperamento_alunos` (`temperamento`, `created_at`, `updated_at`) VALUES ('Chorão', '2016-07-20 18:35:58', '2016-07-20 18:35:58')
+  [1m[36m (7.4ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/alunos/new" for 127.0.0.1 at 2016-07-20 15:36:01 -0300
+Processing by AlunosController#new_aluno as HTML
+  [1m[36mTemperamentoAluno Load (0.4ms)[0m  [1mSELECT `temperamento_alunos`.* FROM `temperamento_alunos`[0m
+  Rendered alunos/new_aluno.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-20 15:36:01 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-20 15:36:01 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-20 15:36:01 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-20 15:36:01 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-20 15:36:01 -0300
+
+
+Started POST "/alunos" for 127.0.0.1 at 2016-07-20 15:36:11 -0300
+Processing by AlunosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S0Jys6LlSR8z7/2hR5dki1QDblcFRsAP2QnU2eb92wDW0E+ImU9RuBj4UNwnXon3Aqk0UqwrLRSPi7omkSjWNQ==", "aluno"=>{"nome"=>"Frank", "data_nasc"=>"10/05/2012", "cidade_nasc"=>"Londrina", "ano_letivo"=>"2016", "data_inicio"=>"01/05/2016", "id"=>"3", "outro_temp"=>"Babaca"}, "commit"=>"Create Aluno"}
+Unpermitted parameter: id
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `alunos` (`nome`, `data_nasc`, `cidade_nasc`, `ano_letivo`, `data_inicio`, `outro_temp`, `created_at`, `updated_at`) VALUES ('Frank', '10/05/2012', 'Londrina', 2016, '01/05/2016', 'Babaca', '2016-07-20 18:36:11', '2016-07-20 18:36:11')[0m
+  [1m[35m (1.9ms)[0m  COMMIT
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.3ms)
+
+ActionView::MissingTemplate (Missing template alunos/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/willian/Documentos/Willian/PadreDehonPAP/sysPadreDehon/app/views"
+):
+  actionview (4.2.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.6) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.0ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (23.7ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.5ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.9ms)
+  [1m[36mAluno Load (1.1ms)[0m  [1mSELECT  `alunos`.* FROM `alunos`  ORDER BY `alunos`.`id` ASC LIMIT 1[0m
+  [1m[35mAluno Load (0.3ms)[0m  SELECT  `alunos`.* FROM `alunos`  ORDER BY `alunos`.`id` ASC LIMIT 1
+  [1m[36m (6.5ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (6.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateStudents (20160726212405)
+  [1m[35m (3.3ms)[0m  CREATE TABLE `students` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `birth_date` varchar(255), `place_of_birth` varchar(255), `school_year` int(11), `start_date` varchar(255), `another_behavior` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160726212405')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateBehaviors (20160726212522)
+  [1m[35m (2.6ms)[0m  CREATE TABLE `behaviors` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160726212522')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateStudentBehaviors (20160727164554)
+  [1m[35m (2.3ms)[0m  CREATE TABLE `student_behaviors` (`id` int(11) auto_increment PRIMARY KEY, `student_id` int(11), `behavior_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (2.6ms)[0m  [1mCREATE  INDEX `index_student_behaviors_on_student_id`  ON `student_behaviors` (`student_id`) [0m
+  [1m[35m (2.6ms)[0m  CREATE  INDEX `index_student_behaviors_on_behavior_id`  ON `student_behaviors` (`behavior_id`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160727164554')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'behaviors'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `behaviors`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_behaviors'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `student_behaviors`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `students`
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-27 13:52:23 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (1.5ms)
+Completed 200 OK in 19ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/behaviors" for 127.0.0.1 at 2016-07-27 13:52:28 -0300
+Processing by BehaviorsController#index as HTML
+  [1m[35mBehavior Load (0.3ms)[0m  SELECT `behaviors`.* FROM `behaviors`
+  Rendered behaviors/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 536ms (Views: 530.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/behaviors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-27 13:52:29 -0300
+
+
+Started GET "/assets/students.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-27 13:52:29 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-27 13:52:29 -0300
+
+
+Started GET "/assets/scaffolds.self-e33a6a5d301076f2b65710f832f7a04e0cb3cd5be92922d9abd5580ed6cb1fca.css?body=1" for 127.0.0.1 at 2016-07-27 13:52:29 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-27 13:52:29 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-27 13:52:29 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-27 13:52:29 -0300
+
+
+Started GET "/assets/behaviors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-27 13:52:29 -0300
+
+
+Started GET "/assets/students.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-27 13:52:29 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-27 13:52:29 -0300
+
+
+Started GET "/behaviors/new" for 127.0.0.1 at 2016-07-27 13:52:31 -0300
+Processing by BehaviorsController#new as HTML
+  Rendered behaviors/_form.html.erb (28.4ms)
+  Rendered behaviors/new.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 84ms (Views: 75.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/behaviors" for 127.0.0.1 at 2016-07-27 13:52:42 -0300
+Processing by BehaviorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LPU9DuL+D1P3/dCy2QNAgxs4ONz+s1+sDKljoBmdGOhjLaaFgXtFFrJh7SZX5TPgLI+bIPtM9ZTpc4LopE4JKQ==", "behavior"=>{"description"=>"Tímido"}, "commit"=>"Create Behavior"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `behaviors` (`description`, `created_at`, `updated_at`) VALUES ('Tímido', '2016-07-27 16:52:42', '2016-07-27 16:52:42')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/behaviors/1
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/behaviors/1" for 127.0.0.1 at 2016-07-27 13:52:42 -0300
+Processing by BehaviorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBehavior Load (0.4ms)[0m  SELECT  `behaviors`.* FROM `behaviors` WHERE `behaviors`.`id` = 1 LIMIT 1
+  Rendered behaviors/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 30ms (Views: 17.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/behaviors" for 127.0.0.1 at 2016-07-27 13:52:46 -0300
+Processing by BehaviorsController#index as HTML
+  [1m[36mBehavior Load (0.3ms)[0m  [1mSELECT `behaviors`.* FROM `behaviors`[0m
+  Rendered behaviors/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/behaviors/new" for 127.0.0.1 at 2016-07-27 13:52:48 -0300
+Processing by BehaviorsController#new as HTML
+  Rendered behaviors/_form.html.erb (2.2ms)
+  Rendered behaviors/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/behaviors" for 127.0.0.1 at 2016-07-27 13:52:57 -0300
+Processing by BehaviorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xZQDMgFk96wJq8zELNz2QJyS9eDFp3fX5YWD36iMfNCKTJi5YuG96Uw38VCiOoUjqyVWHMBY3e8AX2KXFV9tEQ==", "behavior"=>{"description"=>"Usa chupeta"}, "commit"=>"Create Behavior"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `behaviors` (`description`, `created_at`, `updated_at`) VALUES ('Usa chupeta', '2016-07-27 16:52:57', '2016-07-27 16:52:57')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/behaviors/2
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/behaviors/2" for 127.0.0.1 at 2016-07-27 13:52:57 -0300
+Processing by BehaviorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBehavior Load (0.3ms)[0m  [1mSELECT  `behaviors`.* FROM `behaviors` WHERE `behaviors`.`id` = 2 LIMIT 1[0m
+  Rendered behaviors/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/behaviors" for 127.0.0.1 at 2016-07-27 13:52:59 -0300
+Processing by BehaviorsController#index as HTML
+  [1m[35mBehavior Load (0.4ms)[0m  SELECT `behaviors`.* FROM `behaviors`
+  Rendered behaviors/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.4ms)
+  [1m[36mBehavior Load (0.4ms)[0m  [1mSELECT  `behaviors`.* FROM `behaviors`  ORDER BY `behaviors`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `students` (`name`, `place_of_birth`, `created_at`, `updated_at`) VALUES ('Willian', 'Curitiba', '2016-07-27 17:03:35', '2016-07-27 17:03:35')[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `student_behaviors` (`behavior_id`, `student_id`, `created_at`, `updated_at`) VALUES (1, 1, '2016-07-27 17:03:35', '2016-07-27 17:03:35')
+  [1m[36m (6.9ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateResponsibles (20160729193749)
+  [1m[35m (11.6ms)[0m  CREATE TABLE `responsibles` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `rg` varchar(255), `cpf` varchar(255), `schooling` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160729193749')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'behaviors'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `behaviors`
+  [1m[36m (0.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'responsibles'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `responsibles`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_behaviors'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `student_behaviors`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `students`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateStudentResponsibles (20160729194701)
+  [1m[35m (10.2ms)[0m  CREATE TABLE `student_responsibles` (`id` int(11) auto_increment PRIMARY KEY, `student_id` int(11), `responsible_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (5.0ms)[0m  [1mCREATE  INDEX `index_student_responsibles_on_student_id`  ON `student_responsibles` (`student_id`) [0m
+  [1m[35m (4.1ms)[0m  CREATE  INDEX `index_student_responsibles_on_responsible_id`  ON `student_responsibles` (`responsible_id`) 
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160729194701')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'behaviors'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `behaviors`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'responsibles'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `responsibles`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_behaviors'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `student_behaviors`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_responsibles'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `student_responsibles`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `students`
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `students` (`name`, `place_of_birth`, `created_at`, `updated_at`) VALUES ('Willian', 'Curitiba', '2016-07-29 20:07:10', '2016-07-29 20:07:10')
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `responsibles` (`name`, `rg`, `schooling`, `created_at`, `updated_at`) VALUES ('Ivone', '12.233.599-89', 'Ensino médio completo', '2016-07-29 20:08:21', '2016-07-29 20:08:21')[0m
+  [1m[35m (3.6ms)[0m  COMMIT
+  [1m[36mStudent Load (3.3ms)[0m  [1mSELECT  `students`.* FROM `students`  ORDER BY `students`.`id` DESC LIMIT 1[0m
+  [1m[35mBehavior Load (1.5ms)[0m  SELECT `behaviors`.* FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 2
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'behaviors'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `behaviors`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'responsibles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `responsibles`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_behaviors'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `student_behaviors`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_responsibles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `student_responsibles`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `students`
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'behaviors'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `behaviors`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'responsibles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `responsibles`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_behaviors'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `student_behaviors`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_responsibles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `student_responsibles`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `students`
+  [1m[36mResponsible Load (0.6ms)[0m  [1mSELECT  `responsibles`.* FROM `responsibles`  ORDER BY `responsibles`.`id` DESC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateStudentResponsibles (20160729202312)
+  [1m[35m (0.5ms)[0m  CREATE TABLE `student_responsibles` (`id` int(11) auto_increment PRIMARY KEY, `student_id` int(11), `responsible_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateStudentResponsibles (20160729202312)
+  [1m[35m (9.6ms)[0m  CREATE TABLE `student_responsibles` (`id` int(11) auto_increment PRIMARY KEY, `student_id` int(11), `responsible_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (3.2ms)[0m  [1mCREATE  INDEX `index_student_responsibles_on_student_id`  ON `student_responsibles` (`student_id`) [0m
+  [1m[35m (3.1ms)[0m  CREATE  INDEX `index_student_responsibles_on_responsible_id`  ON `student_responsibles` (`responsible_id`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160729202312')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'behaviors'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `behaviors`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'responsibles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `responsibles`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_behaviors'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `student_behaviors`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_responsibles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `student_responsibles`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `students`
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `student_responsibles` (`student_id`, `responsible_id`, `created_at`, `updated_at`) VALUES (2, 1, '2016-07-29 20:31:35', '2016-07-29 20:31:35')[0m
+  [1m[35m (7.3ms)[0m  COMMIT
+  [1m[36mBehavior Load (0.5ms)[0m  [1mSELECT  `behaviors`.* FROM `behaviors`  ORDER BY `behaviors`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `student_behaviors` (`student_id`, `behavior_id`, `created_at`, `updated_at`) VALUES (2, 2, '2016-07-29 20:33:43', '2016-07-29 20:33:43')[0m
+  [1m[35m (1.5ms)[0m  COMMIT
+  [1m[36mBehavior Load (0.5ms)[0m  [1mSELECT  `behaviors`.* FROM `behaviors`  ORDER BY `behaviors`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `student_behaviors` (`student_id`, `behavior_id`, `created_at`, `updated_at`) VALUES (2, 2, '2016-07-29 20:36:36', '2016-07-29 20:36:36')[0m
+  [1m[35m (6.7ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'behaviors'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `behaviors`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'responsibles'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `responsibles`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_behaviors'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `student_behaviors`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_responsibles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `student_responsibles`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `students`
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT  `students`.* FROM `students`  ORDER BY `students`.`id` DESC LIMIT 1[0m
+  [1m[35mResponsible Load (0.4ms)[0m  SELECT  `responsibles`.* FROM `responsibles`  ORDER BY `responsibles`.`id` DESC LIMIT 1
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-01 18:43:01 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.9ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateResponsibles (20160730183521)
+  [1m[35m (2.1ms)[0m  CREATE TABLE `responsibles` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `rg` varchar(255), `cpf` varchar(255), `schooling` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateResponsibles (20160730183521)
+  [1m[35m (10.1ms)[0m  CREATE TABLE `responsibles` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `rg` varchar(255), `cpf` varchar(255), `schooling` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160730183521')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'behaviors'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `behaviors`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'responsibles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `responsibles`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_behaviors'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `student_behaviors`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `students`
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-01 18:43:44 -0300
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.5ms)
+Completed 200 OK in 11ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/student" for 127.0.0.1 at 2016-08-01 18:43:49 -0300
+
+ActionController::RoutingError (No route matches [GET] "/student"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.4ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.1ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.9ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2016-08-01 18:43:52 -0300
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT `students`.* FROM `students`[0m
+  Rendered students/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 307ms (Views: 299.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/behaviors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-01 18:43:52 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-08-01 18:43:52 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-01 18:43:52 -0300
+
+
+Started GET "/assets/scaffolds.self-e33a6a5d301076f2b65710f832f7a04e0cb3cd5be92922d9abd5580ed6cb1fca.css?body=1" for 127.0.0.1 at 2016-08-01 18:43:52 -0300
+
+
+Started GET "/assets/responsibles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-01 18:43:52 -0300
+
+
+Started GET "/assets/students.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-01 18:43:52 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-01 18:43:52 -0300
+
+
+Started GET "/assets/students.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-01 18:43:52 -0300
+
+
+Started GET "/assets/behaviors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-01 18:43:52 -0300
+
+
+Started GET "/assets/responsibles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-01 18:43:52 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-01 18:43:52 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-08-01 18:43:52 -0300
+
+
+Started GET "/students/1" for 127.0.0.1 at 2016-08-01 18:43:55 -0300
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.3ms)[0m  SELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1
+  [1m[36mBehavior Load (0.6ms)[0m  [1mSELECT `behaviors`.* FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1[0m
+  Rendered students/show.html.erb within layouts/application (60.9ms)
+Completed 200 OK in 106ms (Views: 85.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2016-08-01 18:44:04 -0300
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.4ms)[0m  SELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1
+  [1m[36mBehavior Load (0.3ms)[0m  [1mSELECT `behaviors`.* FROM `behaviors`[0m
+  [1m[35m (0.3ms)[0m  SELECT `behaviors`.id FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `behaviors`.id FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1[0m  [["student_id", 1]]
+  Rendered students/_form.html.erb (29.1ms)
+  Rendered students/edit.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 60ms (Views: 54.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2016-08-01 18:44:13 -0300
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.3ms)[0m  SELECT `students`.* FROM `students`
+  Rendered students/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2016-08-01 18:44:15 -0300
+Processing by StudentsController#new as HTML
+  [1m[36mBehavior Load (0.3ms)[0m  [1mSELECT `behaviors`.* FROM `behaviors`[0m
+  Rendered students/_form.html.erb (11.0ms)
+  Rendered students/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2016-08-01 18:44:45 -0300
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zsIHSQjvmd7xTFZflimWGyuxv41NfRebjXe2QHVKE7ugrAANsb+Qi0FBow2umhHo4rKVWPzPaliYZNf01QIJTA==", "student"=>{"name"=>"Ana Luiza", "birth_date"=>"01/05/2011", "place_of_birth"=>"Maringá", "start_date"=>"01/06/2016", "behavior_ids"=>["1", "2"], "another_behavior"=>""}, "commit"=>"Criar aluno"}
+  [1m[35mBehavior Load (0.3ms)[0m  SELECT `behaviors`.* FROM `behaviors` WHERE `behaviors`.`id` IN (1, 2)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `students` (`name`, `birth_date`, `place_of_birth`, `start_date`, `another_behavior`, `created_at`, `updated_at`) VALUES ('Ana Luiza', '01/05/2011', 'Maringá', '01/06/2016', '', '2016-08-01 21:44:45', '2016-08-01 21:44:45')
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `student_behaviors` (`behavior_id`, `student_id`, `created_at`, `updated_at`) VALUES (1, 3, '2016-08-01 21:44:45', '2016-08-01 21:44:45')[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `student_behaviors` (`behavior_id`, `student_id`, `created_at`, `updated_at`) VALUES (2, 3, '2016-08-01 21:44:45', '2016-08-01 21:44:45')
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/students/3
+Completed 302 Found in 34ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/students/3" for 127.0.0.1 at 2016-08-01 18:44:45 -0300
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mStudent Load (0.3ms)[0m  SELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1
+  [1m[36mBehavior Load (0.3ms)[0m  [1mSELECT `behaviors`.* FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 3[0m
+  Rendered students/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2016-08-01 18:44:49 -0300
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT `students`.* FROM `students`
+  Rendered students/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2016-08-01 18:44:52 -0300
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[35mBehavior Load (0.3ms)[0m  SELECT `behaviors`.* FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1
+  Rendered students/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students/3" for 127.0.0.1 at 2016-08-01 18:44:55 -0300
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m
+  [1m[35mBehavior Load (0.4ms)[0m  SELECT `behaviors`.* FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 3
+  Rendered students/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students/3/edit" for 127.0.0.1 at 2016-08-01 18:44:56 -0300
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m
+  [1m[35mBehavior Load (0.3ms)[0m  SELECT `behaviors`.* FROM `behaviors`
+  [1m[36m (1.6ms)[0m  [1mSELECT `behaviors`.id FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 3[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `behaviors`.id FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 3  [["student_id", 3]]
+  Rendered students/_form.html.erb (11.3ms)
+  Rendered students/edit.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 2.2ms)
+
+
+Started PATCH "/students/3" for 127.0.0.1 at 2016-08-01 18:45:02 -0300
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"StCkQCULI0NWbqAiOYXAPFt5LOiqkwS9uLrVWl9na9ckvqMEnFsqFuZjVXABNkfPknoGPRsheX6tqbTu/y9xIA==", "student"=>{"name"=>"Ana Luiza", "birth_date"=>"01/05/2011", "place_of_birth"=>"Maringá", "start_date"=>"01/06/2016", "behavior_ids"=>["1", "2"], "another_behavior"=>"Chora"}, "commit"=>"Criar aluno", "id"=>"3"}
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mBehavior Load (0.2ms)[0m  [1mSELECT `behaviors`.* FROM `behaviors` WHERE `behaviors`.`id` IN (1, 2)[0m
+  [1m[35mBehavior Load (0.3ms)[0m  SELECT `behaviors`.* FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 3
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `students` SET `another_behavior` = 'Chora', `updated_at` = '2016-08-01 21:45:02' WHERE `students`.`id` = 3[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/students/3
+Completed 302 Found in 7ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/students/3" for 127.0.0.1 at 2016-08-01 18:45:02 -0300
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m
+  [1m[35mBehavior Load (0.2ms)[0m  SELECT `behaviors`.* FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 3
+  Rendered students/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2016-08-01 18:46:44 -0300
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT `students`.* FROM `students`[0m
+  Rendered students/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-03 09:22:42 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/willian/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.0ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.5ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateStudentResponsibles (20160731212519)
+  [1m[35m (3.3ms)[0m  CREATE TABLE `student_responsibles` (`id` int(11) auto_increment PRIMARY KEY, `student_id` int(11), `responsible_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (2.8ms)[0m  [1mCREATE  INDEX `index_student_responsibles_on_student_id`  ON `student_responsibles` (`student_id`) [0m
+  [1m[35m (3.8ms)[0m  CREATE  INDEX `index_student_responsibles_on_responsible_id`  ON `student_responsibles` (`responsible_id`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160731212519')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateDiseases (20160731221116)
+  [1m[35m (2.8ms)[0m  CREATE TABLE `diseases` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160731221116')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateMedicInfos (20160731221839)
+  [1m[35m (4.0ms)[0m  CREATE TABLE `medic_infos` (`id` int(11) auto_increment PRIMARY KEY, `surgery` varchar(255) DEFAULT 'Não', `treatment` varchar(255) DEFAULT 'Não', `allergic` varchar(255) DEFAULT 'Não', `intolerant` varchar(255) DEFAULT 'Não', `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160731221839')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateDiseaseMedicInfos (20160731222251)
+  [1m[35m (3.7ms)[0m  CREATE TABLE `disease_medic_infos` (`id` int(11) auto_increment PRIMARY KEY, `disease_id` int(11), `medic_info_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (3.1ms)[0m  [1mCREATE  INDEX `index_disease_medic_infos_on_disease_id`  ON `disease_medic_infos` (`disease_id`) [0m
+  [1m[35m (3.6ms)[0m  CREATE  INDEX `index_disease_medic_infos_on_medic_info_id`  ON `disease_medic_infos` (`medic_info_id`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160731222251')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveMedicInfoIdFromStudent (20160802235401)
+  [1m[35m (0.8ms)[0m  ALTER TABLE `students` DROP `medic_info_id`
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE `behaviors` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (3.8ms)[0m  CREATE TABLE `disease_medic_infos` (`id` int(11) auto_increment PRIMARY KEY, `disease_id` int(11), `medic_info_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (4.3ms)[0m  [1mCREATE  INDEX `index_disease_medic_infos_on_disease_id` USING btree ON `disease_medic_infos` (`disease_id`) [0m
+  [1m[35m (2.5ms)[0m  CREATE  INDEX `index_disease_medic_infos_on_medic_info_id` USING btree ON `disease_medic_infos` (`medic_info_id`) 
+  [1m[36m (2.5ms)[0m  [1mCREATE TABLE `diseases` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (3.7ms)[0m  CREATE TABLE `medic_infos` (`id` int(11) auto_increment PRIMARY KEY, `surgery` varchar(255) DEFAULT 'Não', `treatment` varchar(255) DEFAULT 'Não', `allergic` varchar(255) DEFAULT 'Não', `intolerant` varchar(255) DEFAULT 'Não', `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (2.5ms)[0m  [1mCREATE TABLE `responsibles` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `rg` varchar(255), `cpf` varchar(255), `schooling` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (2.5ms)[0m  CREATE TABLE `student_behaviors` (`id` int(11) auto_increment PRIMARY KEY, `student_id` int(11), `behavior_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (2.9ms)[0m  [1mCREATE  INDEX `index_student_behaviors_on_behavior_id` USING btree ON `student_behaviors` (`behavior_id`) [0m
+  [1m[35m (2.8ms)[0m  CREATE  INDEX `index_student_behaviors_on_student_id` USING btree ON `student_behaviors` (`student_id`) 
+  [1m[36m (2.3ms)[0m  [1mCREATE TABLE `student_responsibles` (`id` int(11) auto_increment PRIMARY KEY, `student_id` int(11), `responsible_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (2.7ms)[0m  CREATE  INDEX `index_student_responsibles_on_responsible_id` USING btree ON `student_responsibles` (`responsible_id`) 
+  [1m[36m (2.1ms)[0m  [1mCREATE  INDEX `index_student_responsibles_on_student_id` USING btree ON `student_responsibles` (`student_id`) [0m
+  [1m[35m (3.3ms)[0m  CREATE TABLE `students` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `birth_date` varchar(255), `place_of_birth` varchar(255), `school_year` int(11), `start_date` varchar(255), `another_behavior` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (3.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (8.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160802235511')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160731212519')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160731221839')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160802235401')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160730183521')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160726212522')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160726212405')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160731221116')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160727164554')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160731222251')[0m
+  [1m[35m (3.9ms)[0m  CREATE TABLE `behaviors` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (3.6ms)[0m  [1mCREATE TABLE `disease_medic_infos` (`id` int(11) auto_increment PRIMARY KEY, `disease_id` int(11), `medic_info_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (3.3ms)[0m  CREATE  INDEX `index_disease_medic_infos_on_disease_id` USING btree ON `disease_medic_infos` (`disease_id`) 
+  [1m[36m (2.9ms)[0m  [1mCREATE  INDEX `index_disease_medic_infos_on_medic_info_id` USING btree ON `disease_medic_infos` (`medic_info_id`) [0m
+  [1m[35m (3.7ms)[0m  CREATE TABLE `diseases` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (2.8ms)[0m  [1mCREATE TABLE `medic_infos` (`id` int(11) auto_increment PRIMARY KEY, `surgery` varchar(255) DEFAULT 'Não', `treatment` varchar(255) DEFAULT 'Não', `allergic` varchar(255) DEFAULT 'Não', `intolerant` varchar(255) DEFAULT 'Não', `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (4.5ms)[0m  CREATE TABLE `responsibles` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `rg` varchar(255), `cpf` varchar(255), `schooling` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (3.6ms)[0m  [1mCREATE TABLE `student_behaviors` (`id` int(11) auto_increment PRIMARY KEY, `student_id` int(11), `behavior_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (2.3ms)[0m  CREATE  INDEX `index_student_behaviors_on_behavior_id` USING btree ON `student_behaviors` (`behavior_id`) 
+  [1m[36m (2.7ms)[0m  [1mCREATE  INDEX `index_student_behaviors_on_student_id` USING btree ON `student_behaviors` (`student_id`) [0m
+  [1m[35m (4.4ms)[0m  CREATE TABLE `student_responsibles` (`id` int(11) auto_increment PRIMARY KEY, `student_id` int(11), `responsible_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (3.3ms)[0m  [1mCREATE  INDEX `index_student_responsibles_on_responsible_id` USING btree ON `student_responsibles` (`responsible_id`) [0m
+  [1m[35m (3.8ms)[0m  CREATE  INDEX `index_student_responsibles_on_student_id` USING btree ON `student_responsibles` (`student_id`) 
+  [1m[36m (3.4ms)[0m  [1mCREATE TABLE `students` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `birth_date` varchar(255), `place_of_birth` varchar(255), `school_year` int(11), `start_date` varchar(255), `another_behavior` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (2.3ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (4.1ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) [0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160802235511')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160731212519')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160731221839')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160802235401')
+  [1m[36m (2.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160730183521')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160726212522')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160726212405')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160731221116')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160727164554')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160731222251')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-03 09:24:12 -0300
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/willian/.rvm/gems/ruby-2.2.1/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2016-08-03 09:24:19 -0300
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT `students`.* FROM `students`[0m
+  Rendered students/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 352ms (Views: 336.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/diseases.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-03 09:24:19 -0300
+
+
+Started GET "/assets/diseases.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-03 09:24:19 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddMedicInfoToStudents (20160803180839)
+  [1m[35m (8.7ms)[0m  ALTER TABLE `students` ADD `medic_info_id_id` int(11)
+  [1m[36m (2.2ms)[0m  [1mCREATE  INDEX `index_students_on_medic_info_id_id`  ON `students` (`medic_info_id_id`) [0m
+  [1m[35m (7.1ms)[0m  ALTER TABLE `students` ADD CONSTRAINT `fk_rails_7f109f6ddc`
+FOREIGN KEY (`medic_info_id_id`)
+  REFERENCES `medic_info_ids` (`id`)
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddMedicInfoToStudents (20160803180839)
+  [1m[35m (0.4ms)[0m  ALTER TABLE `students` ADD `medic_info_id_id` int(11)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to RemoveStudentIdFromMedicInfo (20160802235511)
+  [1m[36m (8.1ms)[0m  [1mALTER TABLE `medic_infos` ADD `student_id` int(11)[0m
+  [1m[35mSQL (1.8ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20160802235511'
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'behaviors'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `behaviors`[0m
+  [1m[35m (0.1ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'disease_medic_infos'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `disease_medic_infos`[0m
+  [1m[35m (0.1ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'diseases'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `diseases`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'medic_infos'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `medic_infos`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'responsibles'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `responsibles`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_behaviors'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `student_behaviors`[0m
+  [1m[35m (0.4ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_responsibles'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `student_responsibles`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `students`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to RemoveMedicInfoIdFromStudent (20160802235401)
+  [1m[36m (8.2ms)[0m  [1mALTER TABLE `students` ADD `medic_info_id` int(11)[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20160802235401'
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'behaviors'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `behaviors`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'disease_medic_infos'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `disease_medic_infos`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'diseases'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `diseases`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'medic_infos'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `medic_infos`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'responsibles'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `responsibles`[0m
+  [1m[35m (0.4ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_behaviors'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `student_behaviors`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_responsibles'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `student_responsibles`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `students`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to CreateDiseaseMedicInfos (20160731222251)
+  [1m[36m (9.2ms)[0m  [1mDROP INDEX `index_disease_medic_infos_on_medic_info_id` ON `disease_medic_infos`[0m
+  [1m[35m (2.2ms)[0m  DROP INDEX `index_disease_medic_infos_on_disease_id` ON `disease_medic_infos`
+  [1m[36m (2.7ms)[0m  [1mDROP TABLE `disease_medic_infos`[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20160731222251'
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'behaviors'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `behaviors`[0m
+  [1m[35m (0.1ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'diseases'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `diseases`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'medic_infos'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `medic_infos`[0m
+  [1m[35m (0.1ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'responsibles'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `responsibles`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_behaviors'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `student_behaviors`[0m
+  [1m[35m (0.1ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_responsibles'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `student_responsibles`[0m
+  [1m[35m (0.1ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `students`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateDiseaseMedicInfos (20160731222251)
+  [1m[35m (10.6ms)[0m  CREATE TABLE `disease_medic_infos` (`id` int(11) auto_increment PRIMARY KEY, `disease_id` int(11), `medic_info_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (3.7ms)[0m  [1mCREATE  INDEX `index_disease_medic_infos_on_disease_id`  ON `disease_medic_infos` (`disease_id`) [0m
+  [1m[35m (3.2ms)[0m  CREATE  INDEX `index_disease_medic_infos_on_medic_info_id`  ON `disease_medic_infos` (`medic_info_id`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160731222251')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveMedicInfoIdFromStudent (20160802235401)
+  [1m[35m (0.7ms)[0m  ALTER TABLE `students` DROP `medic_info_id`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddMedicInfoToStudents (20160803180839)
+  [1m[35m (11.7ms)[0m  ALTER TABLE `students` ADD `medic_infos_id` int(11)
+  [1m[36m (5.0ms)[0m  [1mCREATE  INDEX `index_students_on_medic_infos_id`  ON `students` (`medic_infos_id`) [0m
+  [1m[35m (0.9ms)[0m  ALTER TABLE `students` ADD CONSTRAINT `fk_rails_f60ff6d1a0`
+FOREIGN KEY (`medic_info_id`)
+  REFERENCES `medic_infos` (`id`)
+
+  [1m[36m (3.6ms)[0m  [1mCREATE TABLE `behaviors` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (3.8ms)[0m  CREATE TABLE `disease_medic_infos` (`id` int(11) auto_increment PRIMARY KEY, `disease_id` int(11), `medic_info_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (3.8ms)[0m  [1mCREATE  INDEX `index_disease_medic_infos_on_disease_id` USING btree ON `disease_medic_infos` (`disease_id`) [0m
+  [1m[35m (3.4ms)[0m  CREATE  INDEX `index_disease_medic_infos_on_medic_info_id` USING btree ON `disease_medic_infos` (`medic_info_id`) 
+  [1m[36m (3.2ms)[0m  [1mCREATE TABLE `diseases` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (4.4ms)[0m  CREATE TABLE `medic_infos` (`id` int(11) auto_increment PRIMARY KEY, `surgery` varchar(255) DEFAULT 'Não', `treatment` varchar(255) DEFAULT 'Não', `allergic` varchar(255) DEFAULT 'Não', `intolerant` varchar(255) DEFAULT 'Não', `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (3.6ms)[0m  [1mCREATE TABLE `responsibles` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `rg` varchar(255), `cpf` varchar(255), `schooling` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (27.0ms)[0m  CREATE TABLE `student_behaviors` (`id` int(11) auto_increment PRIMARY KEY, `student_id` int(11), `behavior_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (2.9ms)[0m  [1mCREATE  INDEX `index_student_behaviors_on_behavior_id` USING btree ON `student_behaviors` (`behavior_id`) [0m
+  [1m[35m (3.4ms)[0m  CREATE  INDEX `index_student_behaviors_on_student_id` USING btree ON `student_behaviors` (`student_id`) 
+  [1m[36m (4.4ms)[0m  [1mCREATE TABLE `student_responsibles` (`id` int(11) auto_increment PRIMARY KEY, `student_id` int(11), `responsible_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (2.9ms)[0m  CREATE  INDEX `index_student_responsibles_on_responsible_id` USING btree ON `student_responsibles` (`responsible_id`) 
+  [1m[36m (3.1ms)[0m  [1mCREATE  INDEX `index_student_responsibles_on_student_id` USING btree ON `student_responsibles` (`student_id`) [0m
+  [1m[35m (12.8ms)[0m  CREATE TABLE `students` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `birth_date` varchar(255), `place_of_birth` varchar(255), `school_year` int(11), `start_date` varchar(255), `another_behavior` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (6.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160802235511')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160731212519')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160731221839')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160802235401')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160730183521')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160726212522')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160726212405')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160731221116')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160727164554')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160731222251')[0m
+  [1m[35m (4.2ms)[0m  CREATE TABLE `behaviors` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE `disease_medic_infos` (`id` int(11) auto_increment PRIMARY KEY, `disease_id` int(11), `medic_info_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (3.0ms)[0m  CREATE  INDEX `index_disease_medic_infos_on_disease_id` USING btree ON `disease_medic_infos` (`disease_id`) 
+  [1m[36m (3.6ms)[0m  [1mCREATE  INDEX `index_disease_medic_infos_on_medic_info_id` USING btree ON `disease_medic_infos` (`medic_info_id`) [0m
+  [1m[35m (4.5ms)[0m  CREATE TABLE `diseases` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (2.8ms)[0m  [1mCREATE TABLE `medic_infos` (`id` int(11) auto_increment PRIMARY KEY, `surgery` varchar(255) DEFAULT 'Não', `treatment` varchar(255) DEFAULT 'Não', `allergic` varchar(255) DEFAULT 'Não', `intolerant` varchar(255) DEFAULT 'Não', `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (4.5ms)[0m  CREATE TABLE `responsibles` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `rg` varchar(255), `cpf` varchar(255), `schooling` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE `student_behaviors` (`id` int(11) auto_increment PRIMARY KEY, `student_id` int(11), `behavior_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (5.9ms)[0m  CREATE  INDEX `index_student_behaviors_on_behavior_id` USING btree ON `student_behaviors` (`behavior_id`) 
+  [1m[36m (4.0ms)[0m  [1mCREATE  INDEX `index_student_behaviors_on_student_id` USING btree ON `student_behaviors` (`student_id`) [0m
+  [1m[35m (4.5ms)[0m  CREATE TABLE `student_responsibles` (`id` int(11) auto_increment PRIMARY KEY, `student_id` int(11), `responsible_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (1.7ms)[0m  [1mCREATE  INDEX `index_student_responsibles_on_responsible_id` USING btree ON `student_responsibles` (`responsible_id`) [0m
+  [1m[35m (2.4ms)[0m  CREATE  INDEX `index_student_responsibles_on_student_id` USING btree ON `student_responsibles` (`student_id`) 
+  [1m[36m (2.3ms)[0m  [1mCREATE TABLE `students` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `birth_date` varchar(255), `place_of_birth` varchar(255), `school_year` int(11), `start_date` varchar(255), `another_behavior` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (4.0ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) [0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160802235511')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160731212519')
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160731221839')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160802235401')
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160730183521')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160726212522')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160726212405')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160731221116')
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160727164554')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160731222251')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddMedicInfoRefToStudents (20160803183153)
+  [1m[35m (15.0ms)[0m  ALTER TABLE `students` ADD `medic_info_id` int(11)
+  [1m[36m (5.0ms)[0m  [1mCREATE  INDEX `index_students_on_medic_info_id`  ON `students` (`medic_info_id`) [0m
+  [1m[35m (8.8ms)[0m  ALTER TABLE `students` ADD CONSTRAINT `fk_rails_f60ff6d1a0`
+FOREIGN KEY (`medic_info_id`)
+  REFERENCES `medic_infos` (`id`)
+
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160803183153')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'behaviors'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `behaviors`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'disease_medic_infos'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `disease_medic_infos`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'diseases'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `diseases`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'medic_infos'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `medic_infos`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'responsibles'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `responsibles`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_behaviors'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `student_behaviors`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_responsibles'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `student_responsibles`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `students`
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to AddMedicInfoRefToStudents (20160803183153)
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `students`
+  [1m[36m (9.3ms)[0m  [1mALTER TABLE `students` DROP FOREIGN KEY fk_rails_f60ff6d1a0[0m
+  [1m[35m (6.0ms)[0m  ALTER TABLE `students` DROP `medic_info_id`
+  [1m[36mSQL (0.7ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20160803183153'[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'behaviors'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `behaviors`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'disease_medic_infos'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `disease_medic_infos`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'diseases'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `diseases`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'medic_infos'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `medic_infos`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'responsibles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `responsibles`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_behaviors'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `student_behaviors`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_responsibles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `student_responsibles`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `students`
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddMedicInfoRefToStudents (20160803195329)
+  [1m[35m (12.4ms)[0m  ALTER TABLE `students` ADD `medic_info_id` int(11)
+  [1m[36m (3.1ms)[0m  [1mCREATE  INDEX `index_students_on_medic_info_id`  ON `students` (`medic_info_id`) [0m
+  [1m[35m (6.3ms)[0m  ALTER TABLE `students` ADD CONSTRAINT `fk_rails_f60ff6d1a0`
+FOREIGN KEY (`medic_info_id`)
+  REFERENCES `medic_infos` (`id`)
+
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160803195329')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'behaviors'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `behaviors`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'disease_medic_infos'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `disease_medic_infos`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'diseases'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `diseases`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'medic_infos'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `medic_infos`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'responsibles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `responsibles`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_behaviors'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `student_behaviors`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_responsibles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `student_responsibles`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `students`
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `diseases` (`name`, `created_at`, `updated_at`) VALUES ('Bronquite', '2016-08-03 19:54:29', '2016-08-03 19:54:29')
+  [1m[36m (2.7ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/students" for 127.0.0.1 at 2016-08-03 16:57:10 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.3ms)[0m  SELECT `students`.* FROM `students`
+  Rendered students/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 175ms (Views: 160.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2016-08-03 16:57:12 -0300
+Processing by StudentsController#new as HTML
+  [1m[36mBehavior Load (0.3ms)[0m  [1mSELECT `behaviors`.* FROM `behaviors`[0m
+  Rendered students/_form.html.erb (19.8ms)
+  Rendered students/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 44ms (Views: 36.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/behaviors" for 127.0.0.1 at 2016-08-03 16:57:37 -0300
+Processing by BehaviorsController#index as HTML
+  [1m[35mBehavior Load (0.2ms)[0m  SELECT `behaviors`.* FROM `behaviors`
+  Rendered behaviors/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/behaviors/new" for 127.0.0.1 at 2016-08-03 16:57:51 -0300
+Processing by BehaviorsController#new as HTML
+  Rendered behaviors/_form.html.erb (2.3ms)
+  Rendered behaviors/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 52ms (Views: 49.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/behaviors" for 127.0.0.1 at 2016-08-03 16:57:56 -0300
+Processing by BehaviorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k/SVxKocwcwrZgvKcZaf9FzVJYNehgzQYM8KmfunWtvE9+gCoWTqrfSO9xqBFuuwL4P0rlVMHDijzRYEOWyg3g==", "behavior"=>{"description"=>"Tímido"}, "commit"=>"Adicionar novo comportamento"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `behaviors` (`description`, `created_at`, `updated_at`) VALUES ('Tímido', '2016-08-03 19:57:56', '2016-08-03 19:57:56')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/behaviors/1
+Completed 302 Found in 6ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/behaviors/1" for 127.0.0.1 at 2016-08-03 16:57:56 -0300
+Processing by BehaviorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBehavior Load (0.5ms)[0m  SELECT  `behaviors`.* FROM `behaviors` WHERE `behaviors`.`id` = 1 LIMIT 1
+  Rendered behaviors/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 18.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/behaviors" for 127.0.0.1 at 2016-08-03 16:57:57 -0300
+Processing by BehaviorsController#index as HTML
+  [1m[36mBehavior Load (0.2ms)[0m  [1mSELECT `behaviors`.* FROM `behaviors`[0m
+  Rendered behaviors/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/behaviors/new" for 127.0.0.1 at 2016-08-03 16:57:58 -0300
+Processing by BehaviorsController#new as HTML
+  Rendered behaviors/_form.html.erb (2.2ms)
+  Rendered behaviors/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/behaviors" for 127.0.0.1 at 2016-08-03 16:58:03 -0300
+Processing by BehaviorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3q6kMpCmsaFIu9Ca56Y47E/suB9JBcbhr9hYcviwKHaJrdn0m96awJdTLEoXJkyoPLppMkLP1gls2kTvOnvScw==", "behavior"=>{"description"=>"Chorão"}, "commit"=>"Adicionar novo comportamento"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `behaviors` (`description`, `created_at`, `updated_at`) VALUES ('Chorão', '2016-08-03 19:58:03', '2016-08-03 19:58:03')[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/behaviors/2
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/behaviors/2" for 127.0.0.1 at 2016-08-03 16:58:03 -0300
+Processing by BehaviorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBehavior Load (0.3ms)[0m  [1mSELECT  `behaviors`.* FROM `behaviors` WHERE `behaviors`.`id` = 2 LIMIT 1[0m
+  Rendered behaviors/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/behaviors" for 127.0.0.1 at 2016-08-03 16:58:52 -0300
+Processing by BehaviorsController#index as HTML
+  [1m[35mBehavior Load (0.3ms)[0m  SELECT `behaviors`.* FROM `behaviors`
+  Rendered behaviors/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/behaviors/new" for 127.0.0.1 at 2016-08-03 16:58:54 -0300
+Processing by BehaviorsController#new as HTML
+  Rendered behaviors/_form.html.erb (1.3ms)
+  Rendered behaviors/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/behaviors" for 127.0.0.1 at 2016-08-03 16:58:58 -0300
+Processing by BehaviorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0Uxyaj0I9MB8RrOvnAqM+uoI4+klLVRIQrQeGe2tzqaGTw+sNnDfoaOuT39sivi+mV4yxC7nRKCBtgKEL2Y0ow==", "behavior"=>{"description"=>"Usa chupeta"}, "commit"=>"Adicionar novo comportamento"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `behaviors` (`description`, `created_at`, `updated_at`) VALUES ('Usa chupeta', '2016-08-03 19:58:58', '2016-08-03 19:58:58')
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/behaviors/3
+Completed 302 Found in 5ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/behaviors/3" for 127.0.0.1 at 2016-08-03 16:58:58 -0300
+Processing by BehaviorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBehavior Load (0.2ms)[0m  SELECT  `behaviors`.* FROM `behaviors` WHERE `behaviors`.`id` = 3 LIMIT 1
+  Rendered behaviors/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/behaviors" for 127.0.0.1 at 2016-08-03 16:58:59 -0300
+Processing by BehaviorsController#index as HTML
+  [1m[36mBehavior Load (0.3ms)[0m  [1mSELECT `behaviors`.* FROM `behaviors`[0m
+  Rendered behaviors/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2016-08-03 16:59:25 -0300
+Processing by StudentsController#new as HTML
+  [1m[35mBehavior Load (0.3ms)[0m  SELECT `behaviors`.* FROM `behaviors`
+  Rendered students/_form.html.erb (37.3ms)
+  Rendered students/new.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/behaviors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-03 16:59:25 -0300
+
+
+Started GET "/assets/diseases.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-03 16:59:25 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-08-03 16:59:25 -0300
+
+
+Started GET "/assets/students.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-03 16:59:25 -0300
+
+
+Started GET "/assets/scaffolds.self-e33a6a5d301076f2b65710f832f7a04e0cb3cd5be92922d9abd5580ed6cb1fca.css?body=1" for 127.0.0.1 at 2016-08-03 16:59:25 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-03 16:59:25 -0300
+
+
+Started GET "/assets/responsibles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-03 16:59:25 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-03 16:59:25 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-03 16:59:25 -0300
+
+
+Started GET "/assets/behaviors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-03 16:59:25 -0300
+
+
+Started GET "/assets/diseases.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-03 16:59:25 -0300
+
+
+Started GET "/assets/responsibles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-03 16:59:25 -0300
+
+
+Started GET "/assets/students.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-03 16:59:25 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-08-03 16:59:25 -0300
+
+
+Started POST "/students" for 127.0.0.1 at 2016-08-03 16:59:38 -0300
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zQyaOCdTePwTiE385pgDw9hWqoQJ8z/qcgp+k536dGWaD+f+LCtTncxgsSwWGHeHqwB7qQI5LwKxCGIOXzGOYA==", "student"=>{"name"=>"Ana Luiza", "birth_date"=>"01/05/2011", "place_of_birth"=>"Maringá", "school_year"=>"2017", "start_date"=>"01/06/2016", "behavior_ids"=>["2"], "another_behavior"=>""}, "commit"=>"Criar aluno"}
+  [1m[36mBehavior Load (0.4ms)[0m  [1mSELECT  `behaviors`.* FROM `behaviors` WHERE `behaviors`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `students` (`name`, `birth_date`, `place_of_birth`, `school_year`, `start_date`, `another_behavior`, `created_at`, `updated_at`) VALUES ('Ana Luiza', '01/05/2011', 'Maringá', 2017, '01/06/2016', '', '2016-08-03 19:59:38', '2016-08-03 19:59:38')[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `student_behaviors` (`behavior_id`, `student_id`, `created_at`, `updated_at`) VALUES (2, 1, '2016-08-03 19:59:38', '2016-08-03 19:59:38')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/students/1
+Completed 302 Found in 19ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2016-08-03 16:59:38 -0300
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.4ms)[0m  SELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1
+  [1m[36mBehavior Load (0.6ms)[0m  [1mSELECT `behaviors`.* FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1[0m
+  [1m[35mResponsible Load (0.3ms)[0m  SELECT `responsibles`.* FROM `responsibles` INNER JOIN `student_responsibles` ON `responsibles`.`id` = `student_responsibles`.`responsible_id` WHERE `student_responsibles`.`student_id` = 1
+  Rendered students/show.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 61ms (Views: 54.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2016-08-03 17:09:05 -0300
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT `students`.* FROM `students`[0m
+  Rendered students/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/responsibles" for 127.0.0.1 at 2016-08-03 17:09:14 -0300
+Processing by ResponsiblesController#index as HTML
+  [1m[35mResponsible Load (0.2ms)[0m  SELECT `responsibles`.* FROM `responsibles`
+  Rendered responsibles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/responsibles/new" for 127.0.0.1 at 2016-08-03 17:09:16 -0300
+Processing by ResponsiblesController#new as HTML
+  Rendered responsibles/_form.html.erb (6.3ms)
+  Rendered responsibles/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 52ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/responsibles" for 127.0.0.1 at 2016-08-03 17:09:57 -0300
+Processing by ResponsiblesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PDA0nje1m6vxM5CGIEb28zib7Yt2kzgJ2WU84MLb0GVrM0lYPM2wyi7bbFbQxoK3S808pn1ZKOEaZyB9ABAqYA==", "responsible"=>{"name"=>"Ivone Dantas", "rg"=>"12.633.555 - 15", "cpf"=>"093.655.966-25", "schooling"=>"Ensino Médio Completo"}, "commit"=>"Create Responsible"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `responsibles` (`name`, `rg`, `cpf`, `schooling`, `created_at`, `updated_at`) VALUES ('Ivone Dantas', '12.633.555 - 15', '093.655.966-25', 'Ensino Médio Completo', '2016-08-03 20:09:57', '2016-08-03 20:09:57')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/responsibles/1
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/responsibles/1" for 127.0.0.1 at 2016-08-03 17:09:57 -0300
+Processing by ResponsiblesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mResponsible Load (0.2ms)[0m  SELECT  `responsibles`.* FROM `responsibles` WHERE `responsibles`.`id` = 1 LIMIT 1
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT `students`.* FROM `students` INNER JOIN `student_responsibles` ON `students`.`id` = `student_responsibles`.`student_id` WHERE `student_responsibles`.`responsible_id` = 1[0m
+  Rendered responsibles/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.6ms)
+  [1m[35mResponsible Load (0.2ms)[0m  SELECT  `responsibles`.* FROM `responsibles`  ORDER BY `responsibles`.`id` ASC LIMIT 1
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT  `students`.* FROM `students`  ORDER BY `students`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `student_responsibles` (`student_id`, `responsible_id`, `created_at`, `updated_at`) VALUES (1, 1, '2016-08-03 20:10:34', '2016-08-03 20:10:34')[0m
+  [1m[35m (3.2ms)[0m  COMMIT
+  [1m[36mResponsible Load (0.3ms)[0m  [1mSELECT `responsibles`.* FROM `responsibles` INNER JOIN `student_responsibles` ON `responsibles`.`id` = `student_responsibles`.`responsible_id` WHERE `student_responsibles`.`student_id` = 1[0m
+
+
+Started GET "/students" for 127.0.0.1 at 2016-08-03 17:10:40 -0300
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT `students`.* FROM `students`
+  Rendered students/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2016-08-03 17:10:42 -0300
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[35mBehavior Load (0.4ms)[0m  SELECT `behaviors`.* FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1
+  [1m[36mResponsible Load (0.3ms)[0m  [1mSELECT `responsibles`.* FROM `responsibles` INNER JOIN `student_responsibles` ON `responsibles`.`id` = `student_responsibles`.`responsible_id` WHERE `student_responsibles`.`student_id` = 1[0m
+  Rendered students/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/responsibles/1" for 127.0.0.1 at 2016-08-03 17:10:44 -0300
+Processing by ResponsiblesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mResponsible Load (0.2ms)[0m  SELECT  `responsibles`.* FROM `responsibles` WHERE `responsibles`.`id` = 1 LIMIT 1
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT `students`.* FROM `students` INNER JOIN `student_responsibles` ON `students`.`id` = `student_responsibles`.`student_id` WHERE `student_responsibles`.`responsible_id` = 1[0m
+  Rendered responsibles/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/responsibles/1" for 127.0.0.1 at 2016-08-03 17:10:48 -0300
+Processing by ResponsiblesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mResponsible Load (0.3ms)[0m  SELECT  `responsibles`.* FROM `responsibles` WHERE `responsibles`.`id` = 1 LIMIT 1
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT `students`.* FROM `students` INNER JOIN `student_responsibles` ON `students`.`id` = `student_responsibles`.`student_id` WHERE `student_responsibles`.`responsible_id` = 1[0m
+  Rendered responsibles/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `medic_infos` (`created_at`, `updated_at`) VALUES ('2016-08-03 21:28:29', '2016-08-03 21:28:29')[0m
+  [1m[35m (3.7ms)[0m  COMMIT
+  [1m[36mDisease Load (0.6ms)[0m  [1mSELECT  `diseases`.* FROM `diseases`  ORDER BY `diseases`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `disease_medic_infos` (`medic_info_id`, `disease_id`, `created_at`, `updated_at`) VALUES (1, 1, '2016-08-03 21:29:00', '2016-08-03 21:29:00')[0m
+  [1m[35m (7.0ms)[0m  COMMIT
+  [1m[36mDisease Load (0.3ms)[0m  [1mSELECT `diseases`.* FROM `diseases` INNER JOIN `disease_medic_infos` ON `diseases`.`id` = `disease_medic_infos`.`disease_id` WHERE `disease_medic_infos`.`medic_info_id` = 1[0m
+
+
+Started GET "/students" for 127.0.0.1 at 2016-08-03 18:37:27 -0300
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT `students`.* FROM `students`
+  Rendered students/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2016-08-03 18:37:34 -0300
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[35mBehavior Load (0.3ms)[0m  SELECT `behaviors`.* FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1
+  [1m[36mResponsible Load (0.2ms)[0m  [1mSELECT `responsibles`.* FROM `responsibles` INNER JOIN `student_responsibles` ON `responsibles`.`id` = `student_responsibles`.`responsible_id` WHERE `student_responsibles`.`student_id` = 1[0m
+  Rendered students/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/responsibles/1" for 127.0.0.1 at 2016-08-03 18:37:36 -0300
+Processing by ResponsiblesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mResponsible Load (0.2ms)[0m  SELECT  `responsibles`.* FROM `responsibles` WHERE `responsibles`.`id` = 1 LIMIT 1
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT `students`.* FROM `students` INNER JOIN `student_responsibles` ON `students`.`id` = `student_responsibles`.`student_id` WHERE `student_responsibles`.`responsible_id` = 1[0m
+  Rendered responsibles/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/responsibles" for 127.0.0.1 at 2016-08-03 18:37:37 -0300
+Processing by ResponsiblesController#index as HTML
+  [1m[35mResponsible Load (0.3ms)[0m  SELECT `responsibles`.* FROM `responsibles`
+  Rendered responsibles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/behaviors/" for 127.0.0.1 at 2016-08-03 18:39:22 -0300
+Processing by BehaviorsController#index as HTML
+  [1m[36mBehavior Load (0.2ms)[0m  [1mSELECT `behaviors`.* FROM `behaviors`[0m
+  Rendered behaviors/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/behaviors/new" for 127.0.0.1 at 2016-08-03 18:39:25 -0300
+Processing by BehaviorsController#new as HTML
+  Rendered behaviors/_form.html.erb (1.2ms)
+  Rendered behaviors/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `students` (`name`, `birth_date`, `place_of_birth`, `school_year`, `start_date`, `another_behavior`, `created_at`, `updated_at`) VALUES ('Ana Eduarda', '25/04/2013', 'Londrina', 2016, '01/01/2016', 'Leva brinquedos', '2016-08-03 21:55:08', '2016-08-03 21:55:08')[0m
+  [1m[35m (7.6ms)[0m  COMMIT
+  [1m[36mStudent Load (0.6ms)[0m  [1mSELECT  `students`.* FROM `students`  ORDER BY `students`.`id` DESC LIMIT 1[0m
+  [1m[35mBehavior Load (0.3ms)[0m  SELECT  `behaviors`.* FROM `behaviors` WHERE `behaviors`.`id` = 3 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `student_behaviors` (`student_id`, `behavior_id`, `created_at`, `updated_at`) VALUES (2, 3, '2016-08-03 21:55:59', '2016-08-03 21:55:59')
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mBehavior Load (0.3ms)[0m  SELECT `behaviors`.* FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 2
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `behaviors` (`description`, `created_at`, `updated_at`) VALUES ('Fácil (alegre, tranquila, comunicativa...)', '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (6.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `behaviors` (`description`, `created_at`, `updated_at`) VALUES ('Razoável (alegre, expressiva, pouco reservada)', '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `behaviors` (`description`, `created_at`, `updated_at`) VALUES ('Difícil (morde, bate, grita, joga-se no chão)', '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `behaviors` (`description`, `created_at`, `updated_at`) VALUES ('Chora com frequência', '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `behaviors` (`description`, `created_at`, `updated_at`) VALUES ('Dorme durante o dia', '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `behaviors` (`description`, `created_at`, `updated_at`) VALUES ('Usa fraldas', '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `behaviors` (`description`, `created_at`, `updated_at`) VALUES ('Usa mamadeira', '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `behaviors` (`description`, `created_at`, `updated_at`) VALUES ('Usa chupeta', '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `diseases` (`name`, `created_at`, `updated_at`) VALUES ('Alergia/Rinite', '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `diseases` (`name`, `created_at`, `updated_at`) VALUES ('Varicela (catapora)', '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `diseases` (`name`, `created_at`, `updated_at`) VALUES ('Infecção de garganta', '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `diseases` (`name`, `created_at`, `updated_at`) VALUES ('Refluxo', '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `diseases` (`name`, `created_at`, `updated_at`) VALUES ('Bronquite', '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `diseases` (`name`, `created_at`, `updated_at`) VALUES ('Conjuntivite', '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `diseases` (`name`, `created_at`, `updated_at`) VALUES ('Infecção urinaria', '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `diseases` (`name`, `created_at`, `updated_at`) VALUES ('Rubéola', '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `diseases` (`name`, `created_at`, `updated_at`) VALUES ('Caxumba', '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `diseases` (`name`, `created_at`, `updated_at`) VALUES ('Hepatite', '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `diseases` (`name`, `created_at`, `updated_at`) VALUES ('Otite', '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `diseases` (`name`, `created_at`, `updated_at`) VALUES ('Sarampo', '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `students` (`name`, `birth_date`, `place_of_birth`, `school_year`, `start_date`, `created_at`, `updated_at`) VALUES ('Willian Dantas', '12/03/2010', 'Curitiba', 2016, '01/06/2016', '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `students` (`name`, `birth_date`, `place_of_birth`, `school_year`, `start_date`, `created_at`, `updated_at`) VALUES ('Pedro Luiz', '05/06/2012', 'Maringá', 2017, '01/01/2017', '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `students` (`name`, `birth_date`, `place_of_birth`, `school_year`, `start_date`, `another_behavior`, `created_at`, `updated_at`) VALUES ('Ana Eduarda', '25/04/2013', 'Londrina', 2016, '01/01/2016', 'Leva brinquedos', '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (1.6ms)[0m  COMMIT
+  [1m[36mBehavior Load (0.2ms)[0m  [1mSELECT  `behaviors`.* FROM `behaviors` WHERE `behaviors`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `student_behaviors` (`student_id`, `behavior_id`, `created_at`, `updated_at`) VALUES (3, 3, '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mBehavior Load (0.2ms)[0m  [1mSELECT  `behaviors`.* FROM `behaviors` WHERE `behaviors`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `student_behaviors` (`student_id`, `behavior_id`, `created_at`, `updated_at`) VALUES (3, 1, '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36mBehavior Load (0.1ms)[0m  [1mSELECT  `behaviors`.* FROM `behaviors` WHERE `behaviors`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `student_behaviors` (`student_id`, `behavior_id`, `created_at`, `updated_at`) VALUES (4, 2, '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `responsibles` (`name`, `rg`, `cpf`, `schooling`, `created_at`, `updated_at`) VALUES ('Ivone Dantas', '12.566.636-45', '333.666.999-56', 'Ensino Médio', '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `responsibles` (`name`, `rg`, `cpf`, `schooling`, `created_at`, `updated_at`) VALUES ('João Silva', '45.899.456-5', '555.888.444-99', 'Ensino fundamental', '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `responsibles` (`name`, `rg`, `cpf`, `schooling`, `created_at`, `updated_at`) VALUES ('Geraldo Santos', '12.563.563-89', '563.563.563-56', 'Ensino superior incompleto', '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `student_responsibles` (`student_id`, `responsible_id`, `created_at`, `updated_at`) VALUES (3, 2, '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `student_responsibles` (`student_id`, `responsible_id`, `created_at`, `updated_at`) VALUES (5, 3, '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `student_responsibles` (`student_id`, `responsible_id`, `created_at`, `updated_at`) VALUES (4, 2, '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `medic_infos` (`surgery`, `treatment`, `allergic`, `intolerant`, `created_at`, `updated_at`) VALUES ('No pé', 'Para gastrite', 'Amendoin', 'Lactose', '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `medic_infos` (`surgery`, `treatment`, `intolerant`, `created_at`, `updated_at`) VALUES ('No braço', 'Para ADHD', 'Lactose', '2016-08-04 18:16:34', '2016-08-04 18:16:34')[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `medic_infos` (`treatment`, `created_at`, `updated_at`) VALUES ('Psiquiatrico', '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mDisease Load (0.2ms)[0m  SELECT  `diseases`.* FROM `diseases` WHERE `diseases`.`id` = 3 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `disease_medic_infos` (`medic_info_id`, `disease_id`, `created_at`, `updated_at`) VALUES (2, 3, '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mDisease Load (0.2ms)[0m  SELECT  `diseases`.* FROM `diseases` WHERE `diseases`.`id` = 5 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `disease_medic_infos` (`medic_info_id`, `disease_id`, `created_at`, `updated_at`) VALUES (2, 5, '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mDisease Load (0.2ms)[0m  SELECT  `diseases`.* FROM `diseases` WHERE `diseases`.`id` = 3 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `disease_medic_infos` (`medic_info_id`, `disease_id`, `created_at`, `updated_at`) VALUES (3, 3, '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mDisease Load (0.1ms)[0m  SELECT  `diseases`.* FROM `diseases` WHERE `diseases`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `disease_medic_infos` (`medic_info_id`, `disease_id`, `created_at`, `updated_at`) VALUES (4, 1, '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mDisease Load (0.1ms)[0m  SELECT  `diseases`.* FROM `diseases` WHERE `diseases`.`id` = 6 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `disease_medic_infos` (`medic_info_id`, `disease_id`, `created_at`, `updated_at`) VALUES (4, 6, '2016-08-04 18:16:34', '2016-08-04 18:16:34')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT  `students`.* FROM `students`  ORDER BY `students`.`id` ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.6ms)[0m  SELECT  `students`.* FROM `students`  ORDER BY `students`.`id` DESC LIMIT 1
+  [1m[36mMedicInfo Load (0.5ms)[0m  [1mSELECT  `medic_infos`.* FROM `medic_infos`  ORDER BY `medic_infos`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `students` SET `medic_info_id` = 4, `updated_at` = '2016-08-04 18:21:30' WHERE `students`.`id` = 5[0m
+  [1m[35m (7.0ms)[0m  COMMIT
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT  `students`.* FROM `students`  ORDER BY `students`.`id` DESC LIMIT 1[0m
+  [1m[35mStudent Load (0.4ms)[0m  SELECT  `students`.* FROM `students`  ORDER BY `students`.`id` DESC LIMIT 1
+  [1m[36mStudent Load (0.6ms)[0m  [1mSELECT  `students`.* FROM `students`  ORDER BY `students`.`id` DESC LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT  `students`.* FROM `students`  ORDER BY `students`.`id` DESC LIMIT 1
+  [1m[36mStudent Load (0.6ms)[0m  [1mSELECT  `students`.* FROM `students`  ORDER BY `students`.`id` DESC LIMIT 1[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT  `students`.* FROM `students`  ORDER BY `students`.`id` DESC LIMIT 1[0m
+  [1m[35mMedicInfo Load (0.3ms)[0m  SELECT  `medic_infos`.* FROM `medic_infos`  ORDER BY `medic_infos`.`id` DESC LIMIT 1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to AddMedicInfoRefToStudents (20160803195329)
+  [1m[36m (0.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `students`
+  [1m[36m (5.6ms)[0m  [1mALTER TABLE `students` DROP FOREIGN KEY fk_rails_f60ff6d1a0[0m
+  [1m[35m (12.5ms)[0m  ALTER TABLE `students` DROP `medic_info_id`
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20160803195329'[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'behaviors'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `behaviors`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'disease_medic_infos'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `disease_medic_infos`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'diseases'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `diseases`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'medic_infos'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `medic_infos`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'responsibles'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `responsibles`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_behaviors'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `student_behaviors`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_responsibles'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `student_responsibles`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `students`
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddStudentsRefToMedicInfos (20160804183046)
+  [1m[35m (18.3ms)[0m  ALTER TABLE `medic_infos` ADD `students_id` int(11)
+  [1m[36m (6.5ms)[0m  [1mCREATE  INDEX `index_medic_infos_on_students_id`  ON `medic_infos` (`students_id`) [0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE `medic_infos` ADD CONSTRAINT `fk_rails_032af7de8c`
+FOREIGN KEY (`student_id`)
+  REFERENCES `students` (`id`)
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddStudentsRefToMedicInfos (20160804183046)
+  [1m[35m (17.8ms)[0m  ALTER TABLE `medic_infos` ADD `students_id` int(11)
+  [1m[36m (8.6ms)[0m  [1mCREATE  INDEX `index_medic_infos_on_students_id`  ON `medic_infos` (`students_id`) [0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE `medic_infos` ADD CONSTRAINT `fk_rails_032af7de8c`
+FOREIGN KEY (`student_id`)
+  REFERENCES `students` (`id`)
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddStudentsRefToMedicInfos (20160804183046)
+  [1m[35m (17.4ms)[0m  ALTER TABLE `medic_infos` ADD `student_id` int(11)
+  [1m[36m (7.6ms)[0m  [1mCREATE  INDEX `index_medic_infos_on_student_id`  ON `medic_infos` (`student_id`) [0m
+  [1m[35m (10.3ms)[0m  ALTER TABLE `medic_infos` ADD CONSTRAINT `fk_rails_032af7de8c`
+FOREIGN KEY (`student_id`)
+  REFERENCES `students` (`id`)
+
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160804183046')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'behaviors'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `behaviors`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'disease_medic_infos'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `disease_medic_infos`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'diseases'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `diseases`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'medic_infos'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `medic_infos`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'responsibles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `responsibles`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_behaviors'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `student_behaviors`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'student_responsibles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `student_responsibles`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'sysPadreDehonDB'
+  AND fk.table_name = 'students'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `students`
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT  `students`.* FROM `students`  ORDER BY `students`.`id` DESC LIMIT 1[0m
+  [1m[35mMedicInfo Load (0.2ms)[0m  SELECT  `medic_infos`.* FROM `medic_infos`  ORDER BY `medic_infos`.`id` DESC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `medic_infos` SET `student_id` = 5, `updated_at` = '2016-08-04 18:57:25' WHERE `medic_infos`.`id` = 4
+  [1m[36m (6.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mMedicInfo Load (0.7ms)[0m  SELECT  `medic_infos`.* FROM `medic_infos`  ORDER BY `medic_infos`.`id` DESC LIMIT 1
+  [1m[36mMedicInfo Load (0.2ms)[0m  [1mSELECT  `medic_infos`.* FROM `medic_infos`  ORDER BY `medic_infos`.`id` DESC LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT  `students`.* FROM `students` WHERE `students`.`id` = 5 LIMIT 1
+  [1m[36mStudent Load (0.6ms)[0m  [1mSELECT  `students`.* FROM `students`  ORDER BY `students`.`id` DESC LIMIT 1[0m
+  [1m[35mMedicInfo Load (0.3ms)[0m  SELECT  `medic_infos`.* FROM `medic_infos` WHERE `medic_infos`.`student_id` = 5 LIMIT 1
+  [1m[36mDisease Load (0.3ms)[0m  [1mSELECT `diseases`.* FROM `diseases` INNER JOIN `disease_medic_infos` ON `diseases`.`id` = `disease_medic_infos`.`disease_id` WHERE `disease_medic_infos`.`medic_info_id` = 4[0m
+  [1m[35mMedicInfo Load (0.5ms)[0m  SELECT  `medic_infos`.* FROM `medic_infos`  ORDER BY `medic_infos`.`id` ASC LIMIT 1
+  [1m[36mStudent Load (0.7ms)[0m  [1mSELECT  `students`.* FROM `students`  ORDER BY `students`.`id` ASC LIMIT 1[0m
+  [1m[35mMedicInfo Load (0.3ms)[0m  SELECT  `medic_infos`.* FROM `medic_infos` WHERE `medic_infos`.`student_id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `medic_infos` SET `student_id` = 1, `updated_at` = '2016-08-04 19:16:30' WHERE `medic_infos`.`id` = 1
+  [1m[36m (7.2ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/students" for 127.0.0.1 at 2016-08-04 16:30:28 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT `students`.* FROM `students`
+  Rendered students/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 210ms (Views: 195.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/students/2" for 127.0.0.1 at 2016-08-04 16:30:37 -0300
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 2 LIMIT 1[0m
+  [1m[35mBehavior Load (0.3ms)[0m  SELECT `behaviors`.* FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 2
+  [1m[36mResponsible Load (0.3ms)[0m  [1mSELECT `responsibles`.* FROM `responsibles` INNER JOIN `student_responsibles` ON `responsibles`.`id` = `student_responsibles`.`responsible_id` WHERE `student_responsibles`.`student_id` = 2[0m
+  Rendered students/show.html.erb within layouts/application (49.9ms)
+Completed 200 OK in 114ms (Views: 96.2ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2016-08-04 16:30:46 -0300
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.4ms)[0m  SELECT `students`.* FROM `students`
+  Rendered students/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students/4" for 127.0.0.1 at 2016-08-04 16:30:50 -0300
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 4 LIMIT 1[0m
+  [1m[35mBehavior Load (0.5ms)[0m  SELECT `behaviors`.* FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 4
+  [1m[36mResponsible Load (0.4ms)[0m  [1mSELECT `responsibles`.* FROM `responsibles` INNER JOIN `student_responsibles` ON `responsibles`.`id` = `student_responsibles`.`responsible_id` WHERE `student_responsibles`.`student_id` = 4[0m
+  Rendered students/show.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2016-08-04 16:30:53 -0300
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.3ms)[0m  SELECT `students`.* FROM `students`
+  Rendered students/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/behaviors" for 127.0.0.1 at 2016-08-04 16:31:06 -0300
+Processing by BehaviorsController#index as HTML
+  [1m[36mBehavior Load (0.3ms)[0m  [1mSELECT `behaviors`.* FROM `behaviors`[0m
+  Rendered behaviors/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/behaviors/new" for 127.0.0.1 at 2016-08-04 16:31:09 -0300
+Processing by BehaviorsController#new as HTML
+  Rendered behaviors/_form.html.erb (23.2ms)
+  Rendered behaviors/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/behaviors" for 127.0.0.1 at 2016-08-04 16:31:10 -0300
+Processing by BehaviorsController#index as HTML
+  [1m[35mBehavior Load (0.2ms)[0m  SELECT `behaviors`.* FROM `behaviors`
+  Rendered behaviors/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2016-08-04 16:31:18 -0300
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[35mBehavior Load (0.3ms)[0m  SELECT `behaviors`.* FROM `behaviors`
+  [1m[36m (0.3ms)[0m  [1mSELECT `behaviors`.id FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `behaviors`.id FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1  [["student_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `behaviors`.id FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1[0m  [["student_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `behaviors`.id FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1  [["student_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `behaviors`.id FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1[0m  [["student_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `behaviors`.id FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1  [["student_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `behaviors`.id FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1[0m  [["student_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `behaviors`.id FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1  [["student_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `behaviors`.id FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1[0m  [["student_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `behaviors`.id FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1  [["student_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `behaviors`.id FROM `behaviors` INNER JOIN `student_behaviors` ON `behaviors`.`id` = `student_behaviors`.`behavior_id` WHERE `student_behaviors`.`student_id` = 1[0m  [["student_id", 1]]
+  Rendered students/_form.html.erb (21.8ms)
+  Rendered students/edit.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 1.0ms)
